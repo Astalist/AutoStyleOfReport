@@ -1,0 +1,49 @@
+identity:
+  name: "docxfile"
+  author: "czyyy"
+  label:
+    en_US: "docxfile"
+    zh_Hans: "docxfile"
+    pt_BR: "docxfile"
+    ja_JP: "docxfile"
+description:
+  human:
+    en_US: "demo"
+    zh_Hans: "demo"
+    pt_BR: "demo"
+    ja_JP: "demo"
+  llm: "demo"
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+      ja_JP: クエリ文字列
+    human_description:
+      en_US: "demo"
+      zh_Hans: "demo"
+      pt_BR: "demo"
+      ja_JP: "demo"
+    llm_description: "demo"
+    form: llm
+
+  - name: model
+    type: file
+    required: true
+    label:
+        en_US: "demo"
+        zh_Hans: 模板文件
+    human_description:
+      en_US: "demo"
+      zh_Hans: "demo"
+      pt_BR: "demo"
+      ja_JP: "demo"
+    llm_description: "demo"
+    form: llm
+
+extra:
+  python:
+    source: tools/docxfile.py
